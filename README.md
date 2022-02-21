@@ -49,4 +49,4 @@ We provide one version of pretrained weights. Pretraining was based on the origi
 ## Fine-tuning PHS-BERT
 
 ## Contact Information
-If you have any questions, please submit a Github issue of contact Usman Naseem (usman.naseem@sydney.edu.au).
+If you have any questions, please submit a Github issue or contact Usman Naseem (usman.naseem@sydney.edu.au).
