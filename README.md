@@ -13,7 +13,7 @@ We provide one version of pretrained weights. The currently available version of
 We followed the standard pretraining protocols of BERT and initialized PHS-BERT with weights from BERT during the training phase instead of training from scratch and used the uncased version of the BERT model. 
 <br/>
 <br/>
-PHS-BERT is trained on a corpus of health-related tweets that were crawled via the Twitter API. Focusing on the tasks related to PHS, keywords used to collect pretraining corpus are set to disease, symptom, vaccine, and mental health-related words in English. Retweet tags were deleted from the raw corpus, and URLs and usernames were re- placed with HTTP-URL and @USER, respectively. All emoticons were replaced with their associated meanings. 
+PHS-BERT is trained on a corpus of health-related tweets that were crawled via the Twitter API. Focusing on the tasks related to PHS, keywords used to collect pretraining corpus are set to disease, symptom, vaccine, and mental health-related words in English. Retweet tags were deleted from the raw corpus, and URLs and usernames were replaced with HTTP-URL and @USER, respectively. All emoticons were replaced with their associated meanings. 
 <br/>
 <br/>
 Each sequence of BERT LM inputs is converted to 50,265 vocabulary tokens. Twitter posts are restricted to 200 characters, and during the training and evaluation phase, we used a batch size of 8. Distributed training was performed on a TPU v3-8.
