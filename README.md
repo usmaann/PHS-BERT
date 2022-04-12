@@ -1,12 +1,16 @@
 # PHS-BERT
-A Domain-Specific Pretrained Language Model for Public Health Surveillance on Social Media
-<br/>
-<br/>
-This repository provides the PHS-BERT model, a transformer-based pretrained language model for the early detection of tasks related to public health surveillance on social media. Please refer to our [paper](https://arxiv.org/abs/2204.04521) for more details.
+We present and release [PHS-BERT](https://arxiv.org/abs/2204.04521), a transformer-based pretrained language model (PLM), to identify tasks related to public health surveillance (PHS) on social media. Compared with existing PLMs that are mainly evaluated on limited tasks, PHS-BERT achieved state-of-the-art performance on 25 tested datasets, showing that our PLM is robust and generalizable in common PHS tasks.
 
-## Download
+## Usage
 We provide one version of pretrained weights. The currently available version of pretrained weights is as follows:
-1. [PHS-BERT](https://drive.google.com/file/d/1RIzqFHPwx_Ro152dkHiKU9omKaZzrhFF/view?usp=sharing) - based on BERT-base model
+* [PHS-BERT](https://drive.google.com/file/d/1RIzqFHPwx_Ro152dkHiKU9omKaZzrhFF/view?usp=sharing) - based on BERT-base model
+
+Alternatively, load the model via [Huggingface's Transformers library](https://github.com/huggingface/transformers]):
+```
+from transformers import AutoTokenizer, AutoModel
+tokenizer = AutoTokenizer.from_pretrained("publichealthsurveillance/PHS-BERT")
+model = AutoModel.from_pretrained("publichealthsurveillance/PHS-BERT")
+```
 
 ## Training Procedure
 ### Pretraining
@@ -59,6 +63,8 @@ We used the embedding of the special token [CLS] of the last hidden layer as the
 We train and release a PLM to accelerate the automatic identification of tasks related to PHS on social media. Our work aims to develop a new computational method for screening users in need of early intervention and is not intended to use in clinical settings or as a diagnostic tool.
 
 ## BibTex entry and citation info
+For more details, refer to the paper [Benchmarking for Public Health Surveillance tasks on Social Media with a Domain-Specific Pretrained Language Model](https://arxiv.org/abs/2204.04521).
+
 ```
 @misc{https://doi.org/10.48550/arxiv.2204.04521,
   doi = {10.48550/ARXIV.2204.04521},
