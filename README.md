@@ -79,4 +79,4 @@ For more details, refer to the paper [Benchmarking for Public Health Surveillanc
 ```
 
 ## Contact Information
-If you have any questions, please submit a Github issue or contact Usman Naseem (usman.naseem@sydney.edu.au).
+If you have any questions, please submit a GitHub issue or contact Usman Naseem (usman.naseem@sydney.edu.au).
