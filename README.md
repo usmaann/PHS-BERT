@@ -25,6 +25,7 @@ Each sequence of BERT LM inputs is converted to 50,265 vocabulary tokens. Twitte
 ### Fine-tuning
 We used the embedding of the special token [CLS] of the last hidden layer as the final feature of the input text. We adopted the multilayer perceptron (MLP) with the hyperbolic tangent activation function and used Adam optimizer. The models are trained with a one cycle policy at a maximum learning rate of 2e-05 with momentum cycled between 0.85 and 0.95.
 
+<!--
 ## Datasets
 ### Suicide
 - [R-SSD](https://drive.google.com/file/d/1efbfuKJop7oQ_P8Rck8wNy17256JZlPm/view?usp=sharing)
@@ -58,6 +59,7 @@ We used the embedding of the special token [CLS] of the last hidden layer as the
 - [SMM4H T1](https://drive.google.com/file/d/1MNoCBArz_dYpRQBARs1NXdu7tlpjbg8r/view?usp=sharing)
 - [SMM4H T2](https://drive.google.com/file/d/1dGceZB7mxbHc0fxw-DTnPq3TpDvSqffH/view?usp=sharing)
 - [HRT](https://drive.google.com/file/d/16v7UFYzPNb0W3de8JGRmw0OnuDovrQcX/view?usp=sharing)
+-->
 
 ## Societal Impact
 We train and release a PLM to accelerate the automatic identification of tasks related to PHS on social media. Our work aims to develop a new computational method for screening users in need of early intervention and is not intended to use in clinical settings or as a diagnostic tool.
