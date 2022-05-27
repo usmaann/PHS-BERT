@@ -68,15 +68,21 @@ We train and release a PLM to accelerate the automatic identification of tasks r
 For more details, refer to the paper [Benchmarking for Public Health Surveillance tasks on Social Media with a Domain-Specific Pretrained Language Model](https://arxiv.org/abs/2204.04521).
 
 ```
-@misc{https://doi.org/10.48550/arxiv.2204.04521,
-  doi = {10.48550/ARXIV.2204.04521},
-  url = {https://arxiv.org/abs/2204.04521},
-  author = {Naseem, Usman and Lee, Byoung Chan and Khushi, Matloob and Kim, Jinman and Dunn, Adam G.},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Benchmarking for Public Health Surveillance tasks on Social Media with a Domain-Specific Pretrained Language Model},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
+@inproceedings{naseem-etal-2022-benchmarking,
+    title = "Benchmarking for Public Health Surveillance tasks on Social Media with a Domain-Specific Pretrained Language Model",
+    author = "Naseem, Usman  and
+      Chan Lee, Byoung  and
+      Khushi, Matloob  and
+      Kim, Jinman  and
+      Dunn, Adam",
+    booktitle = "Proceedings of NLP Power! The First Workshop on Efficient Benchmarking in NLP",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.nlppower-1.3",
+    pages = "22--31",
+    abstract = "A user-generated text on social media enables health workers to keep track of information, identify possible outbreaks, forecast disease trends, monitor emergency cases, and ascertain disease awareness and response to official health correspondence. This exchange of health information on social media has been regarded as an attempt to enhance public health surveillance (PHS). Despite its potential, the technology is still in its early stages and is not ready for widespread application. Advancements in pretrained language models (PLMs) have facilitated the development of several domain-specific PLMs and a variety of downstream applications. However, there are no PLMs for social media tasks involving PHS. We present and release PHS-BERT, a transformer-based PLM, to identify tasks related to public health surveillance on social media. We compared and benchmarked the performance of PHS-BERT on 25 datasets from different social medial platforms related to 7 different PHS tasks. Compared with existing PLMs that are mainly evaluated on limited tasks, PHS-BERT achieved state-of-the-art performance on all 25 tested datasets, showing that our PLM is robust and generalizable in the common PHS tasks. By making PHS-BERT available, we aim to facilitate the community to reduce the computational cost and introduce new baselines for future works across various PHS-related tasks.",
 }
 ```
 
